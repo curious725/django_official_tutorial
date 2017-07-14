@@ -32,7 +32,7 @@ Vagrant.configure("2") do |config|
 
     provisioning(dev, [db_root_password,db_name,db_user,db_password])
 
-    config.vm.network :forwarded_port, host: 8000, guest: 8000, host_ip: "127.0.0.1"
+    dev.vm.network :forwarded_port, host: 8000, guest: 8000, host_ip: "127.0.0.1"
   end
 
   config.vm.define "prod" do |prod|

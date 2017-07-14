@@ -95,8 +95,12 @@ WSGI_APPLICATION = 'polls.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': '',
-        'NAME': '',
+        'ENGINE': get_secret("db_engine"),
+        'NAME': get_secret('db_name'),
+        'USER': get_secret('db_user'),
+        'PASSWORD': get_secret('db_password'),
+        'HOST': get_secret('db_host'),
+        'PORT': get_secret('db_port'),
     }
 }
 

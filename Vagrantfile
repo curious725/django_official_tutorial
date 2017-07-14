@@ -20,7 +20,7 @@ Vagrant.configure("2") do |config|
     path: "provision.sh", args: shell_arguments
   end
 
-  excludes = [".git/","/venv"]
+  excludes = [".git/","venv/"]
   config.vm.synced_folder ".", "/vagrant", type: "rsync",
     rsync__exclude: excludes, rsync_excludes: excludes
 

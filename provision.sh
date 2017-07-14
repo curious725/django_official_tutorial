@@ -70,6 +70,11 @@ dpkg -s git &>/dev/null || {
 	sudo apt-get install -y git
 }
 
+# MySQL dependencies
+dpkg -s libmysqlclient-dev &>/dev/null || {
+	sudo apt-get install libmysqlclient-dev
+}
+
 # MySQL
 
 sudo debconf-set-selections <<< "mysql-server mysql-server/root_password password $DB_ROOT_PASSWORD"

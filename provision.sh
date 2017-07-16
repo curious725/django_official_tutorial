@@ -4,7 +4,7 @@ DB_ROOT_PASSWORD=$1
 DB_NAME=$2
 DB_USER=$3
 DB_PASSWORD=$4
-
+TEST_DB_NAME=$5
 
 #Updating and instaling dependencies
 sudo apt-get -y update
@@ -90,6 +90,7 @@ then
     echo "CREATE DATABASE $DB_NAME" | mysql -uroot -p$DB_ROOT_PASSWORD
     echo "CREATE USER '$DB_USER'@'localhost' IDENTIFIED BY '$DB_PASSWORD'" | mysql -uroot -p$DB_ROOT_PASSWORD
     echo "GRANT ALL PRIVILEGES ON $DB_NAME.* TO '$DB_USER'@'localhost'" | mysql -uroot -p$DB_ROOT_PASSWORD
+    echo "GRANT ALL PRIVILEGES ON $TEST_DB_NAME.* TO '$DB_USER'@'localhost'" | mysql -uroot -p$DB_ROOT_PASSWORD
     echo "flush privileges" | mysql -uroot -p$DB_ROOT_PASSWORD
 
     sudo touch /var/log/databasesetup

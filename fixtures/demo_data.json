@@ -1,0 +1,1355 @@
+[
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "polls_app",
+    "model": "question"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "polls_app",
+    "model": "choice"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "mfn3nfy00t3z6k3nkzsmgsni2xpbv5yq",
+  "fields": {
+    "session_data": "YTE1MTdmODY2NjA1YmNiNDE4YjM1MzUwNmRjY2E4MTM2M2E3MmZjZTp7Il9hdXRoX3VzZXJfaGFzaCI6ImNiMzA0NjkxMDNkYjVjMjJiOGQzN2VjOTllYzVkOGE4NTUyMjQzNDIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=",
+    "expire_date": "2017-07-30T09:47:59Z"
+  }
+},
+{
+  "model": "polls_app.question",
+  "pk": 1,
+  "fields": {
+    "question_text": "What's up?",
+    "pub_date": "2017-07-16T10:24:43Z"
+  }
+},
+{
+  "model": "polls_app.question",
+  "pk": 2,
+  "fields": {
+    "question_text": "What will be the value of variable arr: arr = rang?(0, 6, 2)",
+    "pub_date": "2017-07-16T12:23:49Z"
+  }
+},
+{
+  "model": "polls_app.question",
+  "pk": 3,
+  "fields": {
+    "question_text": "What will print this code: d?f = '>' pr?nt def * 3",
+    "pub_date": "2017-07-16T12:29:43Z"
+  }
+},
+{
+  "model": "polls_app.question",
+  "pk": 4,
+  "fields": {
+    "question_text": "What will print this code d?f func(): ??ss ?r?nt fun?()",
+    "pub_date": "2017-07-16T12:31:26Z"
+  }
+},
+{
+  "model": "polls_app.question",
+  "pk": 5,
+  "fields": {
+    "question_text": "What will show 7 / -3?",
+    "pub_date": "2017-07-16T12:33:10Z"
+  }
+},
+{
+  "model": "polls_app.question",
+  "pk": 6,
+  "fields": {
+    "question_text": "What will print the next code: ? = [1, 2, 3] d?l a[1] ?rint a[1]",
+    "pub_date": "2017-07-16T12:34:45Z"
+  }
+},
+{
+  "model": "polls_app.question",
+  "pk": 7,
+  "fields": {
+    "question_text": "How many numbers will show this code: ? = [1, 2, 3] d?l a[1] ?rint a[1]",
+    "pub_date": "2017-07-16T12:36:00Z"
+  }
+},
+{
+  "model": "polls_app.question",
+  "pk": 8,
+  "fields": {
+    "question_text": "What will print this code if (? = 1): ?rint a",
+    "pub_date": "2017-07-16T12:37:27Z"
+  }
+},
+{
+  "model": "polls_app.choice",
+  "pk": 1,
+  "fields": {
+    "question": 1,
+    "choice_text": "Not much",
+    "votes": 0
+  }
+},
+{
+  "model": "polls_app.choice",
+  "pk": 2,
+  "fields": {
+    "question": 1,
+    "choice_text": "The sky",
+    "votes": 0
+  }
+},
+{
+  "model": "polls_app.choice",
+  "pk": 3,
+  "fields": {
+    "question": 1,
+    "choice_text": "Just hacking again",
+    "votes": 0
+  }
+},
+{
+  "model": "polls_app.choice",
+  "pk": 4,
+  "fields": {
+    "question": 2,
+    "choice_text": "[0, 1, 2, 3, 4, 5, 6]",
+    "votes": 6
+  }
+},
+{
+  "model": "polls_app.choice",
+  "pk": 5,
+  "fields": {
+    "question": 2,
+    "choice_text": "[0, 1, 2, 3, 4, 5]",
+    "votes": 0
+  }
+},
+{
+  "model": "polls_app.choice",
+  "pk": 6,
+  "fields": {
+    "question": 2,
+    "choice_text": "[2, 3, 4, 5]",
+    "votes": 0
+  }
+},
+{
+  "model": "polls_app.choice",
+  "pk": 7,
+  "fields": {
+    "question": 2,
+    "choice_text": "[0, 2, 4, 6]",
+    "votes": 0
+  }
+},
+{
+  "model": "polls_app.choice",
+  "pk": 8,
+  "fields": {
+    "question": 2,
+    "choice_text": "[0, 2, 4]",
+    "votes": 2
+  }
+},
+{
+  "model": "polls_app.choice",
+  "pk": 9,
+  "fields": {
+    "question": 3,
+    "choice_text": ">3",
+    "votes": 0
+  }
+},
+{
+  "model": "polls_app.choice",
+  "pk": 10,
+  "fields": {
+    "question": 3,
+    "choice_text": ">>>",
+    "votes": 0
+  }
+},
+{
+  "model": "polls_app.choice",
+  "pk": 11,
+  "fields": {
+    "question": 3,
+    "choice_text": ">*3",
+    "votes": 0
+  }
+},
+{
+  "model": "polls_app.choice",
+  "pk": 12,
+  "fields": {
+    "question": 3,
+    "choice_text": "shows the error",
+    "votes": 0
+  }
+},
+{
+  "model": "polls_app.choice",
+  "pk": 13,
+  "fields": {
+    "question": 4,
+    "choice_text": "0",
+    "votes": 0
+  }
+},
+{
+  "model": "polls_app.choice",
+  "pk": 14,
+  "fields": {
+    "question": 4,
+    "choice_text": "None",
+    "votes": 0
+  }
+},
+{
+  "model": "polls_app.choice",
+  "pk": 15,
+  "fields": {
+    "question": 4,
+    "choice_text": "nothing",
+    "votes": 0
+  }
+},
+{
+  "model": "polls_app.choice",
+  "pk": 16,
+  "fields": {
+    "question": 4,
+    "choice_text": "address of function",
+    "votes": 0
+  }
+},
+{
+  "model": "polls_app.choice",
+  "pk": 17,
+  "fields": {
+    "question": 4,
+    "choice_text": "error",
+    "votes": 0
+  }
+},
+{
+  "model": "polls_app.choice",
+  "pk": 18,
+  "fields": {
+    "question": 5,
+    "choice_text": "2",
+    "votes": 0
+  }
+},
+{
+  "model": "polls_app.choice",
+  "pk": 19,
+  "fields": {
+    "question": 5,
+    "choice_text": "-2",
+    "votes": 0
+  }
+},
+{
+  "model": "polls_app.choice",
+  "pk": 20,
+  "fields": {
+    "question": 5,
+    "choice_text": "-3",
+    "votes": 0
+  }
+},
+{
+  "model": "polls_app.choice",
+  "pk": 21,
+  "fields": {
+    "question": 5,
+    "choice_text": "-2.333333",
+    "votes": 0
+  }
+},
+{
+  "model": "polls_app.choice",
+  "pk": 22,
+  "fields": {
+    "question": 5,
+    "choice_text": "-2.333334",
+    "votes": 0
+  }
+},
+{
+  "model": "polls_app.choice",
+  "pk": 23,
+  "fields": {
+    "question": 6,
+    "choice_text": "1",
+    "votes": 0
+  }
+},
+{
+  "model": "polls_app.choice",
+  "pk": 24,
+  "fields": {
+    "question": 6,
+    "choice_text": "2",
+    "votes": 0
+  }
+},
+{
+  "model": "polls_app.choice",
+  "pk": 25,
+  "fields": {
+    "question": 6,
+    "choice_text": "3",
+    "votes": 0
+  }
+},
+{
+  "model": "polls_app.choice",
+  "pk": 26,
+  "fields": {
+    "question": 6,
+    "choice_text": "error",
+    "votes": 0
+  }
+},
+{
+  "model": "polls_app.choice",
+  "pk": 27,
+  "fields": {
+    "question": 7,
+    "choice_text": "0",
+    "votes": 0
+  }
+},
+{
+  "model": "polls_app.choice",
+  "pk": 28,
+  "fields": {
+    "question": 7,
+    "choice_text": "1",
+    "votes": 0
+  }
+},
+{
+  "model": "polls_app.choice",
+  "pk": 29,
+  "fields": {
+    "question": 7,
+    "choice_text": "3",
+    "votes": 0
+  }
+},
+{
+  "model": "polls_app.choice",
+  "pk": 30,
+  "fields": {
+    "question": 7,
+    "choice_text": "10",
+    "votes": 0
+  }
+},
+{
+  "model": "polls_app.choice",
+  "pk": 31,
+  "fields": {
+    "question": 7,
+    "choice_text": "1",
+    "votes": 0
+  }
+},
+{
+  "model": "polls_app.choice",
+  "pk": 32,
+  "fields": {
+    "question": 7,
+    "choice_text": "12",
+    "votes": 0
+  }
+},
+{
+  "model": "polls_app.choice",
+  "pk": 33,
+  "fields": {
+    "question": 7,
+    "choice_text": "error",
+    "votes": 0
+  }
+},
+{
+  "model": "polls_app.choice",
+  "pk": 34,
+  "fields": {
+    "question": 8,
+    "choice_text": "0",
+    "votes": 0
+  }
+},
+{
+  "model": "polls_app.choice",
+  "pk": 35,
+  "fields": {
+    "question": 8,
+    "choice_text": "1",
+    "votes": 0
+  }
+},
+{
+  "model": "polls_app.choice",
+  "pk": 36,
+  "fields": {
+    "question": 8,
+    "choice_text": "a",
+    "votes": 0
+  }
+},
+{
+  "model": "polls_app.choice",
+  "pk": 37,
+  "fields": {
+    "question": 8,
+    "choice_text": "error",
+    "votes": 0
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can add question",
+    "content_type": 7,
+    "codename": "add_question"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can change question",
+    "content_type": 7,
+    "codename": "change_question"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can delete question",
+    "content_type": 7,
+    "codename": "delete_question"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can add choice",
+    "content_type": 8,
+    "codename": "add_choice"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can change choice",
+    "content_type": 8,
+    "codename": "change_choice"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can delete choice",
+    "content_type": 8,
+    "codename": "delete_choice"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$24000$AWDexiFm5UUV$IS+4ITLzA9F/kA/pNXIWEc8iaGHR9LpRvgXtptLLKUk=",
+    "last_login": "2017-07-16T09:47:59Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "curious725@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2017-07-16T09:46:32Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2017-07-16T10:18:49Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "What's up?",
+    "action_flag": 2,
+    "change_message": "Changed pub_date."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2017-07-16T10:23:25Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "What's up?",
+    "action_flag": 2,
+    "change_message": "Changed pub_date."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2017-07-16T10:24:46Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "What's up?",
+    "action_flag": 2,
+    "change_message": "Changed pub_date."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2017-07-16T12:23:51Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "quizful11",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2017-07-16T12:24:11Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "????? ????? ???????? ?????????? arr: arr = rang?(0, 6, 2)",
+    "action_flag": 2,
+    "change_message": "Changed question_text."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2017-07-16T12:24:34Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "What will be the value of variable arr: arr = rang?(0, 6, 2)",
+    "action_flag": 2,
+    "change_message": "Changed question_text."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2017-07-16T12:25:25Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "????? ????? ???????? ?????????? arr: arr = rang?(0, 6, 2)",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2017-07-16T12:26:12Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "[0, 1, 2, 3, 4, 5, 6]",
+    "action_flag": 2,
+    "change_message": "Changed choice_text."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2017-07-16T12:26:14Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "[0, 1, 2, 3, 4, 5, 6]",
+    "action_flag": 2,
+    "change_message": "No fields changed."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2017-07-16T12:27:07Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "[0, 1, 2, 3, 4, 5]",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2017-07-16T12:27:33Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "6",
+    "object_repr": "[2, 3, 4, 5]",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2017-07-16T12:27:59Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "7",
+    "object_repr": "[0, 2, 4, 6]",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2017-07-16T12:28:27Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "8",
+    "object_repr": "[0, 2, 4]",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2017-07-16T12:28:52Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "????? ???????? ????? ????? ??????? ? ?????? ????????? ??????????",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2017-07-16T12:29:44Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "What will print this code: d?f = '>' pr?nt def * 3",
+    "action_flag": 2,
+    "change_message": "Changed question_text and pub_date."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2017-07-16T12:30:11Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "9",
+    "object_repr": ">3",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2017-07-16T12:30:24Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "10",
+    "object_repr": ">>>",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2017-07-16T12:30:35Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "11",
+    "object_repr": ">*3",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2017-07-16T12:30:45Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "12",
+    "object_repr": "shows the error",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2017-07-16T12:31:28Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "What will print this code d?f func(): ??ss ?r?nt fun?()",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2017-07-16T12:31:47Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "13",
+    "object_repr": "0",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2017-07-16T12:31:58Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "14",
+    "object_repr": "None",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2017-07-16T12:32:08Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "15",
+    "object_repr": "nothing",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2017-07-16T12:32:28Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "16",
+    "object_repr": "address of function",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2017-07-16T12:32:43Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "17",
+    "object_repr": "error",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2017-07-16T12:33:11Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "What will show 7 / -3?",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2017-07-16T12:33:25Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "18",
+    "object_repr": "2",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2017-07-16T12:33:30Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "19",
+    "object_repr": "-2",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2017-07-16T12:33:40Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "20",
+    "object_repr": "-3",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2017-07-16T12:34:07Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "21",
+    "object_repr": "-2.333333",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2017-07-16T12:34:18Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "22",
+    "object_repr": "-2.333334",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2017-07-16T12:34:47Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "What will print the next code: ? = [1, 2, 3] d?l a[1] ?rint a[1]",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2017-07-16T12:35:04Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "23",
+    "object_repr": "1",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2017-07-16T12:35:10Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "24",
+    "object_repr": "2",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2017-07-16T12:35:15Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "25",
+    "object_repr": "3",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2017-07-16T12:35:24Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "26",
+    "object_repr": "error",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2017-07-16T12:36:02Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "How many numbers will show this code: ? = [1, 2, 3] d?l a[1] ?rint a[1]",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2017-07-16T12:36:13Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "27",
+    "object_repr": "0",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2017-07-16T12:36:18Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "28",
+    "object_repr": "1",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2017-07-16T12:36:25Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "29",
+    "object_repr": "3",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2017-07-16T12:36:32Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "30",
+    "object_repr": "10",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2017-07-16T12:36:36Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "31",
+    "object_repr": "1",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2017-07-16T12:36:47Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "32",
+    "object_repr": "12",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2017-07-16T12:36:56Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "33",
+    "object_repr": "error",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2017-07-16T12:37:28Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "What will print this code",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2017-07-16T12:37:59Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "What will print this code if (? = 1): ?rint a",
+    "action_flag": 2,
+    "change_message": "Changed question_text."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2017-07-16T12:38:13Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "34",
+    "object_repr": "0",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2017-07-16T12:38:18Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "35",
+    "object_repr": "1",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2017-07-16T12:38:23Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "36",
+    "object_repr": "a",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2017-07-16T12:38:31Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "37",
+    "object_repr": "error",
+    "action_flag": 1,
+    "change_message": "Added."
+  }
+}
+]

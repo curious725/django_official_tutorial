@@ -15,11 +15,9 @@ class IndexView(generic.ListView):
     return Question.objects.order_by('-pub_date')[:5]
 
 
-def detail(request, question_id):
-    question = get_object_or_404(Question, pk=question_id)
-    return render(
-        request, 'polls_app/detail.html', {'question': question}
-    )
+class DetailView(generic.DetailView):
+    model = Question
+    template_name = 'polls_app/detail.html'
 
 
 def results(request, question_id):

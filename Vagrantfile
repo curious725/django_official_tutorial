@@ -13,6 +13,7 @@ Vagrant.configure("2") do |config|
   db_name = config.jsonconfig.get "db_name"
   db_user = config.jsonconfig.get "db_user"
   db_password = config.jsonconfig.get "db_password"
+  test_db_name = config.jsonconfig.get "test_db_name"
 
 
   def provisioning(config, shell_arguments)
@@ -28,9 +29,8 @@ Vagrant.configure("2") do |config|
     dev.vm.box = "ubuntu/trusty64"
     dev.vm.hostname = "django-dev"
 
-
-
-    provisioning(dev, [db_root_password,db_name,db_user,db_password])
+    provisioning(dev, [db_root_password,db_name,db_user,db_password,
+      test_db_name])
 
     dev.vm.network :forwarded_port, host: 8000, guest: 8000, host_ip: "127.0.0.1"
   end
@@ -38,7 +38,8 @@ Vagrant.configure("2") do |config|
   config.vm.define "prod" do |prod|
     prod.vm.box = "dummy"
 
-    provisioning(prod, [db_root_password,db_name,db_user,db_password])
+    provisioning(prod, [db_root_password,db_name,db_user,db_password,
+      test_db_name])
 
     prod.vm.provider "aws" do |aws, override|
       aws.security_groups = ["vagrant"]

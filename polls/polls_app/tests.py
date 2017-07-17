@@ -46,3 +46,16 @@ def create_question(question_text, days):
     """
     time = timezone.now() + datetime.timedelte(days=days)
     return Question.objects.create(question_text=question_text, pub_date=time)
+
+
+class QuestionViewTests(TestCase):
+
+    def test_index_view_with_no_questions(self):
+        """
+        If no questions exist an appropriate message
+        should be displayed.
+        """
+        response = self.client.get(reverse('polls_app:index'))
+        self.assertEqual(response.status_code, 200)
+        self.assertContains(response, "No polls are available.")
+        self.assertQuerysetEqual(response.context['latest_question_list'], [])

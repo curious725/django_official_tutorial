@@ -3,7 +3,6 @@
 ### With vagrant file you will have Ubuntu 14.04 with preinstalled:
  * Python
  * MySQL
- * Apache 2
 
 ### Requirements
 

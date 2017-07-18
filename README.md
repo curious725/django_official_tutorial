@@ -24,14 +24,21 @@
 
 ### Development Workflow
 * `git clone` this repository:
-    Clone with HTTPS `git clone https://github.com/curious725/django_official_tutorial.git`
-    or Clone with SSH `git clone git@github.com:curious725/django_official_tutorial.git`
+```bash
+# Clone with HTTPS
+$ git clone https://github.com/curious725/django_official_tutorial.git
+# Clone with SSH
+$ git clone git@github.com:curious725/django_official_tutorial.git
+```  
+
 * To start development run
-  `vagrant up dev`
-  'vagrant ssh dev'
-  'cd /vagrant'
-  'source venv/bin/activate'
-  'cd /polls/'
-  'python manage.py runserver 0.0.0.0:8000'
+```bash
+ $ vagrant up dev
+ $ vagrant ssh dev
+ $ cd /vagrant
+ $ source venv/bin/activate
+ $ cd /polls/
+ $ python manage.py runserver 0.0.0.0:8000
+ ```
  * Navigate to [http://localhost:8000/](http://localhost:8888/) to access server.
  

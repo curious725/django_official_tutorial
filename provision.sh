@@ -7,8 +7,6 @@ DB_PASSWORD=$4
 TEST_DB_NAME=$5
 DJANGO_SETTINGS=$6
 
-echo $DJANGO_SETTINGS
-
 #Updating and instaling dependencies
 sudo apt-get -y update
 sudo apt-get -y upgrade

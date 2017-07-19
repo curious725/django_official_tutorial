@@ -6,6 +6,7 @@ DB_USER=$3
 DB_PASSWORD=$4
 TEST_DB_NAME=$5
 DJANGO_SETTINGS=$6
+DJANGO_REQUIREMENTS=$7
 
 #Updating and instaling dependencies
 sudo apt-get -y update
@@ -120,4 +121,4 @@ fi
 cd /vagrant
 python -m virtualenv venv
 source venv/bin/activate
-pip install -r requirements.txt
+pip install -r $DJANGO_REQUIREMENTS

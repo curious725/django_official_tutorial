@@ -30,9 +30,10 @@ Vagrant.configure("2") do |config|
     dev.vm.hostname = "django-dev"
 
     django_settings = config.jsonconfig.get "dev_django_settings"
+    django_requirements = config.jsonconfig.get "dev_django_requirements"
 
     provisioning(dev, [db_root_password,db_name,db_user,db_password,
-      test_db_name, django_settings])
+      test_db_name,django_settings,django_requirements])
 
     dev.vm.network :forwarded_port, host: 8000, guest: 8000, host_ip: "127.0.0.1"
   end
@@ -41,9 +42,10 @@ Vagrant.configure("2") do |config|
     prod.vm.box = "dummy"
 
     django_settings = config.jsonconfig.get "prod_django_settings"
+    django_requirements = config.jsonconfig.get "prod_django_requirements"
 
     provisioning(prod, [db_root_password,db_name,db_user,db_password,
-      test_db_name,django_settings])
+      test_db_name,django_settings,django_requirements])
 
     prod.vm.provider "aws" do |aws, override|
       aws.security_groups = ["vagrant"]

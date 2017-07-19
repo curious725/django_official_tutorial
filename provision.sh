@@ -5,6 +5,7 @@ DB_NAME=$2
 DB_USER=$3
 DB_PASSWORD=$4
 TEST_DB_NAME=$5
+DJANGO_SETTINGS=$6
 
 #Updating and instaling dependencies
 sudo apt-get -y update
@@ -23,6 +24,14 @@ source ~/.bashrc
 
 # update PATH
 echo "PATH=$PATH:$HOME/.local/bin/">>~/.bashrc
+source ~/.bashrc
+
+# set DJANGO_SETTINGS_MODULE environment variable
+echo "export DJANGO_SETTINGS_MODULE=polls.settings.dev">>~/.bashrc
+source ~/.bashrc
+
+# update PYTHONPATH
+echo "export PYTHONPATH=$PYTHONPATH:/vagrant">>~/.bashrc
 source ~/.bashrc
 
 # Python dev packages

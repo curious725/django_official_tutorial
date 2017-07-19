@@ -32,6 +32,10 @@ source ~/.bashrc
 echo "export DJANGO_SETTINGS_MODULE=polls.settings.dev">>~/.bashrc
 source ~/.bashrc
 
+# update PYTHONPATH
+echo "export PYTHONPATH=$PYTHONPATH:/vagrant">>~/.bashrc
+source ~/.bashrc
+
 # Python dev packages
 dpkg -s build-essential &>/dev/null || {
 	sudo apt-get install -y build-essential
